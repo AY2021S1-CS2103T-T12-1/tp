@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import javafx.application.Application;
 
+
 public class AppParametersTest {
 
     private final ParametersStub parametersStub = new ParametersStub();
