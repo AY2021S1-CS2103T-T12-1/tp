@@ -1,4 +1,4 @@
-package seedu.address.logic.parser;
+package seedu.address.logic.parser.itemparser;
 
 import org.junit.jupiter.api.Test;
 

@@ -203,7 +203,9 @@ Format: `exit`
 
 InventoryBook data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
+### Scroll through command history
 
+OneShelf commands are traversable much like Window's command prompt with the arrow up key traversing into previous commands and arrow down key traversing into next commands.  
 
 ### Undo `[Coming Soon]`
 
