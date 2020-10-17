@@ -1,4 +1,4 @@
-package seedu.address.logic.parser;
+package seedu.address.logic.parser.itemparser;
 
 import static seedu.address.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.address.logic.commands.CommandTestUtil.INVALID_NAME_DESC;
@@ -33,7 +33,6 @@ import static seedu.address.testutil.TypicalItems.DUCK_MANUAL;
 import org.junit.jupiter.api.Test;
 
 import seedu.address.logic.commands.itemcommand.ItemAddCommand;
-import seedu.address.logic.parser.itemparser.ItemAddCommandParser;
 import seedu.address.model.item.Item;
 import seedu.address.model.item.Name;
 import seedu.address.model.item.Quantity;

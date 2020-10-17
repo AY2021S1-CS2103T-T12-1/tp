@@ -1,4 +1,4 @@
-package seedu.address.logic.commands;
+package seedu.address.logic.commands.deliverycommand;
 
 import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;
 import static seedu.address.testutil.TypicalDeliveries.getTypicalDeliveryBook;
@@ -6,12 +6,9 @@ import static seedu.address.testutil.TypicalDeliveries.getTypicalDeliveryBook;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.deliverycommand.DeliveryListCommand;
 import seedu.address.model.UserPrefs;
 import seedu.address.model.deliverymodel.DeliveryModel;
 import seedu.address.model.deliverymodel.DeliveryModelManager;
-
-
 
 /**
  * Contains integration tests (interaction with the Model) and unit tests for DeliveryListCommand.

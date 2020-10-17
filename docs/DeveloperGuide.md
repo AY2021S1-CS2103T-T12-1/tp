@@ -133,6 +133,17 @@ Classes used by multiple components are in the `seedu.addressbook.commons` packa
 
 This section describes some noteworthy details on how certain features are implemented.
 
+### Command History Traversal
+Much like Window's Command Prompt, OneShelf supports traversal of command history with the arrow up and down key.
+There is a `History` interface that is implemented by `CommandHistory` class which stores `commandHistory` up to its `lengthLimit`
+
+In order to replicate Window's Command Prompt's History traversal behaviour, a `hasReturnedCurrentCommandBefore` boolean is required to prevent the first `previousCommand()`
+method call to return `commandHistory`'s 2nd last command instead of the last command.
+`hasReturnedCurrentCommandBefore` will be set to true after the initial call of `previousCommand()` and will be reset to false if new commands are added or `nextCommand()` results in a `Optional.empty()`
+
+With `addToHistory(String command)`, `previousCommand()`, `nextCommand()` and `currentCommand()` implemented, a simple `setOnKeyPressed` under `CommandBox` class which checks
+for user's input of arrow up (which calls previousCommand()) and arrow down (which calls nextCommand()) would suffice for GUI implementation.
+
 ### \[Proposed\] Undo/redo feature
 
 #### Proposed Implementation

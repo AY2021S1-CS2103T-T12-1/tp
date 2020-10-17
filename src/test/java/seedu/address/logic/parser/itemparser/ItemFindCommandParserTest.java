@@ -1,4 +1,4 @@
-package seedu.address.logic.parser;
+package seedu.address.logic.parser.itemparser;
 
 import static seedu.address.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.address.logic.commands.CommandTestUtil.NAME_DESC_CHICKEN;
@@ -12,7 +12,6 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 import seedu.address.logic.commands.itemcommand.ItemFindCommand;
-import seedu.address.logic.parser.itemparser.ItemFindCommandParser;
 import seedu.address.model.item.ItemContainsKeywordsPredicate;
 
 public class ItemFindCommandParserTest {

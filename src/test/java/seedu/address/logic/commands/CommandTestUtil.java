@@ -2,9 +2,12 @@ package seedu.address.logic.commands;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_MAX_QUANTITY;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_METRIC;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_ORDER;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_QUANTITY;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SUPPLIER;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
@@ -94,12 +97,12 @@ public class CommandTestUtil {
 
     public static final String NAME_DESC_DAMITH = " " + PREFIX_NAME + VALID_NAME_DAMITH;
     public static final String NAME_DESC_AARON = " " + PREFIX_NAME + VALID_NAME_AARON;
-    public static final String PHONE_DESC_DAMITH = " " + PREFIX_QUANTITY + VALID_PHONE_DAMITH;
-    public static final String PHONE_DESC_AARON = " " + PREFIX_QUANTITY + VALID_PHONE_AARON;
-    public static final String ADDRESS_DESC_DAMITH = " " + PREFIX_SUPPLIER + VALID_ADDRESS_DAMITH;
-    public static final String ADDRESS_DESC_AARON = " " + PREFIX_SUPPLIER + VALID_ADDRESS_AARON;
-    public static final String ORDER_DESC_DAMITH = " " + PREFIX_TAG + VALID_ORDER_DAMITH;
-    public static final String ORDER_DESC_AARON = " " + PREFIX_TAG + VALID_ORDER_AARON;
+    public static final String PHONE_DESC_DAMITH = " " + PREFIX_PHONE + VALID_PHONE_DAMITH;
+    public static final String PHONE_DESC_AARON = " " + PREFIX_PHONE + VALID_PHONE_AARON;
+    public static final String ADDRESS_DESC_DAMITH = " " + PREFIX_ADDRESS + VALID_ADDRESS_DAMITH;
+    public static final String ADDRESS_DESC_AARON = " " + PREFIX_ADDRESS + VALID_ADDRESS_AARON;
+    public static final String ORDER_DESC_DAMITH = " " + PREFIX_ORDER + VALID_ORDER_DAMITH;
+    public static final String ORDER_DESC_AARON = " " + PREFIX_ORDER + VALID_ORDER_AARON;
 
     /**
      * Executes the given {@code command}, confirms that <br>

@@ -1,4 +1,4 @@
-package seedu.address.logic.commands;
+package seedu.address.logic.commands.itemcommand;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -11,7 +11,6 @@ import static seedu.address.logic.commands.CommandTestUtil.VALID_TAG_DUCK;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.itemcommand.ItemEditCommand;
 import seedu.address.logic.commands.itemcommand.ItemEditCommand.EditItemDescriptor;
 import seedu.address.testutil.EditItemDescriptorBuilder;
 
