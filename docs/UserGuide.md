@@ -358,8 +358,23 @@ Pointers to take note when removing an item's quantity:
 * Subtracts `QUANTITY` from the current quantity of an item at the specified `INDEX`.
 The [index](#index) refers to the index number shown in the displayed item list. The index **must be a positive integer** 1, 2, 3, …​
 
-Examples:
-* `remove-i 1 q/10`
+<a name="removeexample1"></a>
+Example 1: `remove-i 2 q/10` using [Figure 1](#uiwithannotationpng) as the starting point.
+
+1. Select the Command Box and type in `remove-i 2 q/10`.
+
+2. Either press Enter on your keyboard or click Send to execute the command.
+
+3. Success Message will be shown in the Result Display and the 2nd item will show up with its updated fields,
+refer to Figure 10.
+    <br>
+    
+    ![edit-iexampleonestepthree](images/remove-i_example_one_step_three.png)
+    <br>
+    
+    Figure 10: Remove 10 quantity from Tuna Result
+    <br>
+
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:** <br>
 There is no remove-d since a pending delivery does not have a quantity
@@ -393,13 +408,13 @@ Example 1: `edit-i 3 n/CARROTS q/50` using [Figure 1](#uiwithannotationpng) as t
 2. Either press Enter on your keyboard or click Send to execute the command.
 
 3. Success Message will be shown in the Result Display and the 3rd item will show up with its updated fields,
-refer to Figure 10.
+refer to Figure 11.
     <br>
     
     ![edit-iexampleonestepthree](images/edit-i_example_one_step_three.png)
     <br>
     
-    Figure 10: Edit Carrot Result
+    Figure 11: Edit Carrot Result
     <br>
 
 <div style="page-break-after: always;"></div>
@@ -411,13 +426,13 @@ Example 2: `edit-i 2 n/Spinach t/` using [Figure 1](#uiwithannotationpng) as the
 2. Either press Enter on your keyboard or click Send to execute the command.
 
 3. Success Message will be shown in the Result Display and the 2nd item will show up with its updated 
-fields as shown in Figure 11.
+fields as shown in Figure 12.
     <br>
     
     ![add-i example two step three](images/edit-i_example_two_step_three.png)
     <br>
     
-    Figure 11: Edit Spinach Result
+    Figure 12: Edit Spinach Result
     <br>
 
 <div style="page-break-after: always;"></div>
@@ -463,13 +478,13 @@ Example:
 2. Either press 'Enter' on your keyboard or click Send to execute the command.
 
 3. Success Message will be shown in the Result Display, and the number of matches will be shown. Refer to 
-Figure 12:
+Figure 13:
     <br>
     
     ![find-command-4](images/find-command-1.PNG)
     <br>
     
-    Figure 12: Find item supplied by NTUC in meat category
+    Figure 13: Find item supplied by NTUC in meat category
     <br>
 
 <div style="page-break-after: always;"></div>
@@ -508,7 +523,7 @@ Example:
     ![find-command-2](images/find-command-2.PNG)
     <br>
     
-    Figure 13: Find delivery by alex and aileen
+    Figure 14: Find delivery by alex and aileen
     <br>
 
 <div style="page-break-after: always;"></div>
@@ -528,13 +543,13 @@ Example:
 
 2. Either press 'Enter' on your keyboard or click Send to execute the command.
 
-3. Success Message will be shown in the Result Display, refer to Figure 14:
+3. Success Message will be shown in the Result Display, refer to Figure 15:
     <br>
     
     ![list-command-1](images/list-command-1.PNG)
     <br>
     
-    Figure 14: List inventory items
+    Figure 15: List inventory items
     <br>
 
 <div style="page-break-after: always;"></div>
@@ -554,24 +569,24 @@ Pointers to take note when deleting an item or delivery:
 
 
 Example 1:
-1. Assume by entering `list-i`, we have the following inventory items as shown in Figure 15:
+1. Assume by entering `list-i`, we have the following inventory items as shown in Figure 16:
     <br>
      
     ![delete-i_step1](images/UG_delete_eg1_step1.PNG)
     <br>
     
-    Figure 15: Before deleting index 2
+    Figure 16: Before deleting index 2
     <br>
 
 <div style="page-break-after: always;"></div>
 
-2. Enter `delete-i 2` which will delete the 2nd INDEX in the inventory book. The expected result should be as shown in Figure 16:
+2. Enter `delete-i 2` which will delete the 2nd INDEX in the inventory book. The expected result should be as shown in Figure 17:
     <br>
     
     ![delete-i_step2](images/UG_delete_eg1_step2.PNG)
     <br>
     
-    Figure 16: After deleting index 2
+    Figure 17: After deleting index 2
     <br>
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:** <br>
@@ -613,7 +628,7 @@ Pointers to take note about `undo`:
     ![edit-i example one step three](images/undo-example-one-step-two.PNG)
     <br>
     
-    Figure 17: Clear all items
+    Figure 18: Clear all items
     <br>
 
 
