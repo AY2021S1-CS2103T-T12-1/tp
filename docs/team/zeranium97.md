@@ -32,6 +32,8 @@ Given below are my contributions to the project.
   * Modify `find` to support finding based on different data fields (Pull Request [\#86](https://github.com/AY2021S1-CS2103T-T12-1/tp/pull/86))
   * Further enhance `find` to search a combination of fields (Pull Request [\#171](https://github.com/AY2021S1-CS2103T-T12-1/tp/pull/86))
 
+<div style="page-break-after: always;"></div>
+
 * **Documentation**:
   * User Guide:
     * Added documentation for the features `delete` and `Coming Soon`.

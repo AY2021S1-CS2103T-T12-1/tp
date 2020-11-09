@@ -2,9 +2,6 @@
 layout: page
 title: User Guide
 ---
-
-<div style="page-break-after: always;"></div>
-
 * Table of Contents
 {:toc}
 --------------------------------------------------------------------------------------------------------------------
@@ -40,8 +37,6 @@ Installation Steps:
 1. Ensure you have Java `11` or above installed in your Computer.
 
 1. Download the latest `oneshelf.jar` from [here](https://github.com/AY2021S1-CS2103T-T12-1/tp/releases).
-
-<div style="page-break-after: always;"></div>
 
 1. Copy the file to the folder you want to use as the _home folder_ for this application.
 
@@ -133,13 +128,13 @@ All pending deliveries related command have a suffix `-d`.
     <br>
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 <a name="3-features"></a>
 ## 3. Features
 
 In this section, you can find the different available command features, general features 
 and upcoming features.
-
-<div style="page-break-after: always;"></div>
 
 ### 3.1 Command Features
 
@@ -170,6 +165,8 @@ Things to note for the commands:
   e.g. `[t/TAG]…​` can be used 
   1. once: `t/brother`
   1. or multiple times: `t/sibling t/brother t/family`
+  
+<div style="page-break-after: always;"></div>
 
 * Fields in the commands can be in any order.<br>
   e.g. a command with format `add-i n/NAME q/QUANTITY` can be used as
@@ -183,8 +180,6 @@ as the actual input. <br>
   name and ignore Chicken.
   
 * The `|` symbol means the user must provide at least one of the fields separated by the `|`
-
-<div style="page-break-after: always;"></div>
 
 #### 3.1.1 Viewing help : `help`
 
@@ -262,6 +257,8 @@ Example 1: Add an item using [Figure 1](#uiwithannotationpng) data set as the st
     Figure 5: Add new item of duck
     <br>
 
+<div style="page-break-after: always;"></div>
+
 4. Press key arrow up on your keyboard to toggle to previous command and press Enter. 
    You should receive an error message, refer to Figure 6:
     <br>
@@ -275,8 +272,6 @@ Example 1: Add an item using [Figure 1](#uiwithannotationpng) data set as the st
     Your command should not pass through as you are not allowed to add an existing item with max quantity and metric.
     
    *Note: If you want to edit the maximum quantity or metric of an existing item, refer to [edit](#edit) feature*
-
-<div style="page-break-after: always;"></div>
 
 5. Repeat step 1 and 2 above but with the command: `add-i n/DUCK q/10 s/NTUC t/perishable`. 
    You can refer to Figure 7 for the expected result:
@@ -306,8 +301,6 @@ Pointers to take note when adding a delivery:
 * You can add a delivery even if the same `Name`, `Phone` and `Address` already exists in the delivery book.
 * Unit of `Time` is minutes ie. `add-d n/JASON p/91111111 a/Blk 251 Orchard Road o/Nasi goreng x1 by/15` indicates
 that this order needs to be delivered out in 15 minutes.
-
-<div style="page-break-after: always;"></div>
 
 Example 1: 
 
@@ -380,8 +373,6 @@ refer to Figure 10.
 There is no remove-d since a pending delivery does not have a quantity
 </div>
 
-<div style="page-break-after: always;"></div>
-
 <a name="edit"></a>
 #### 3.1.4 Editing an item or delivery: `edit-i` or `edit-d`
 
@@ -444,9 +435,6 @@ Format: `edit-d INDEX [n/NAME | p/PHONE | a/ADDRESS | o/ORDER | by/TIME]`
 Examples:
 * `edit-d 1 n/AARON p/91111233` <br>
 Edits the name and phone number of the 1st item to be `AARON` and `91111233` respectively.
-
-
-<div style="page-break-after: always;"></div>
 
 #### 3.1.5 Locating items or delivery by keywords: `find-i` or `find-d`
 
@@ -602,8 +590,6 @@ Clears all entries from the Inventory/ Delivery book.
 
 Format: `clear-i` or `clear-d`
 
-<div style="page-break-after: always;"></div>
-
 #### 3.1.9 Undo last command: `undo`
 
 Undoes the previous command by reverting the current data displayed to the state it was in before the last command was executed.
@@ -663,14 +649,13 @@ Example 1: `redo` using [Figure 1](#uiwithannotationpng) as the starting point.
 
 4. You should now see the items cleared again, as shown in [Step 2 of Example 1](#undoExample1Step2) of the `undo` command.
 
-<div style="page-break-after: always;"></div>
-
 #### 3.1.11 Exiting the program: `exit`
 
 Exits the program.
 
 Format: `exit`
 
+<div style="page-break-after: always;"></div>
 
 ### 3.2 General Features
 
@@ -726,11 +711,7 @@ Look up prices on a 'supplier' database
 
 Notify the user if a certain stock is below threshold
 
-
-
 --------------------------------------------------------------------------------------------------------------------
-<div style="page-break-after: always;"></div>
-
 ## 4. FAQ
 
 **Q**: How do I transfer my data to another Computer? <br>
@@ -743,12 +724,9 @@ You may refer to the [video](#installationvideo) of installation guide.
 **Q**: Help! I've accidentally typed `clear-i` or `clear-d` and wiped all my data! <br>
 **A**: Use the [Undo Command](#3110-undo-last-command-undo) to reset your data back.
 
-
---------------------------------------------------------------------------------------------------------------------
-
-
 <div style="page-break-after: always;"></div>
 
+--------------------------------------------------------------------------------------------------------------------
 ## 5. Command Summary
 
 #### 5.1 General Commands Summary
