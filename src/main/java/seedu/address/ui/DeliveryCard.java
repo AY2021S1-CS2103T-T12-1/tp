@@ -95,7 +95,7 @@ public class DeliveryCard extends UiPart<Region> {
             tempDateTime = tempDateTime.plusDays(days);
 
             long hours = tempDateTime.until(endTime, ChronoUnit.HOURS);
-          
+
             tempDateTime = tempDateTime.plusHours(hours);
 
             long minutes = tempDateTime.until(endTime, ChronoUnit.MINUTES);
