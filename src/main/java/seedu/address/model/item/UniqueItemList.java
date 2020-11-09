@@ -12,6 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import seedu.address.model.item.exceptions.DuplicateItemException;
 import seedu.address.model.item.exceptions.ItemNotFoundException;
+import seedu.address.model.item.exceptions.OverflowQuantityException;
 
 /**
  * A list of items that enforces uniqueness between its elements and does not allow nulls.
@@ -75,7 +76,7 @@ public class UniqueItemList implements Iterable<Item> {
      * @param toAdd item provided to combine with existing item
      * @return combined item
      */
-    public Item addOnExistingItem(Item toAdd) {
+    public Item addOnExistingItem(Item toAdd) throws OverflowQuantityException {
         requireAllNonNull(toAdd);
 
         int index = -1;

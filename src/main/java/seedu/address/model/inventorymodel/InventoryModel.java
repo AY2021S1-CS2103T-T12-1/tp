@@ -9,6 +9,7 @@ import seedu.address.model.Model;
 import seedu.address.model.item.Item;
 import seedu.address.model.item.comparator.ItemNameComparator;
 import seedu.address.model.item.comparator.ItemQuantityPercentageComparator;
+import seedu.address.model.item.exceptions.OverflowQuantityException;
 
 /**
  * The API of the InventoryModel component.
@@ -62,7 +63,7 @@ public interface InventoryModel extends Model {
      * @param item item provided to combine with existing item
      * @return combined item
      */
-    Item addOnExistingItem(Item item);
+    Item addOnExistingItem(Item item) throws OverflowQuantityException;
 
     /**
      * Replaces the given item {@code target} with {@code editedItem}.

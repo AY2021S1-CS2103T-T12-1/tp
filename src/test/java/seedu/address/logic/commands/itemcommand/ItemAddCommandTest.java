@@ -32,6 +32,7 @@ import seedu.address.model.item.Name;
 import seedu.address.model.item.Quantity;
 import seedu.address.model.item.Supplier;
 import seedu.address.model.item.Tag;
+import seedu.address.model.item.exceptions.OverflowQuantityException;
 import seedu.address.testutil.ItemBuilder;
 
 public class ItemAddCommandTest {
@@ -157,7 +158,7 @@ public class ItemAddCommandTest {
         }
 
         @Override
-        public Item addOnExistingItem(Item item) {
+        public Item addOnExistingItem(Item item) throws OverflowQuantityException {
             throw new AssertionError(MESSAGE_METHOD_SHOULD_NOT_BE_CALLED);
         }
 
@@ -218,7 +219,7 @@ public class ItemAddCommandTest {
         }
 
         @Override
-        public Item addOnExistingItem(Item item) {
+        public Item addOnExistingItem(Item item) throws OverflowQuantityException {
             Name name = item.getName();
             Quantity quantity = item.getQuantity().add(item.getQuantity());
             Supplier supplier = item.getSupplier();

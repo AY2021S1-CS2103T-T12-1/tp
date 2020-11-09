@@ -351,6 +351,8 @@ Pointers to take note when removing an item's quantity:
 * Subtracts `QUANTITY` from the current quantity of an item at the specified `INDEX`.
 The [index](#index) refers to the index number shown in the displayed item list. The index **must be a positive integer** 1, 2, 3, …​
 
+
+<div style="page-break-after: always;"></div>
 <a name="removeexample1"></a>
 Example 1: `remove-i 2 q/10` using [Figure 1](#uiwithannotationpng) as the starting point.
 
@@ -360,14 +362,12 @@ Example 1: `remove-i 2 q/10` using [Figure 1](#uiwithannotationpng) as the start
 
 3. Success Message will be shown in the Result Display and the 2nd item will show up with its updated fields,
 refer to Figure 10.
-    <br>
     
     ![edit-iexampleonestepthree](images/remove-i_example_one_step_three.png)
     <br>
     
     Figure 10: Remove 10 quantity from Tuna Result
     <br>
-
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:** <br>
 There is no remove-d since a pending delivery does not have a quantity
@@ -377,6 +377,8 @@ There is no remove-d since a pending delivery does not have a quantity
 #### 3.1.4 Editing an item or delivery: `edit-i` or `edit-d`
 
 Edits an existing item in the Inventory book or an existing pending delivery in the Delivery book.
+
+<div style="page-break-after: always;"></div>
 
 ##### 3.1.4a `edit-i`
 
@@ -389,8 +391,6 @@ Pointers to take note when editing an item:
 * When editing tags, the existing tags of the item will be removed
 * You can remove all the item’s tags by typing `t/` without
     specifying any tags after it.
-
-<div style="page-break-after: always;"></div>
 
 Example 1: `edit-i 3 n/CARROTS q/50` using [Figure 1](#uiwithannotationpng) as the starting point.
 
@@ -504,7 +504,7 @@ Example:
 
 2. Either press 'Enter' on your keyboard or click Send to execute the command.
 
-3. Success Message will be shown in the Result Display, and the number of matches will be shown. Refer to Figure 13:
+3. Success Message will be shown in the Result Display, and the number of matches will be shown. Refer to Figure 14:
     <br>
     <a name="findexample1"></a>
 
@@ -609,6 +609,9 @@ Pointers to take note about `undo`:
 1. Select the Command box and type in `clear-i`
 
 2. Either press Enter on your keyboard or click Send to execute the command.
+
+3. Success Message will be shown in the Result Display, refer to Figure 18:
+
     <br>
     
     ![edit-i example one step three](images/undo-example-one-step-two.PNG)

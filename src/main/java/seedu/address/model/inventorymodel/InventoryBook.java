@@ -7,6 +7,7 @@ import java.util.List;
 import javafx.collections.ObservableList;
 import seedu.address.model.item.Item;
 import seedu.address.model.item.UniqueItemList;
+import seedu.address.model.item.exceptions.OverflowQuantityException;
 
 /**
  * Wraps all data at the inventory-book level
@@ -78,7 +79,7 @@ public class InventoryBook implements ReadOnlyInventoryBook {
      * @param item item provided to combine with existing item
      * @return combined item
      */
-    public Item addOnExistingItem(Item item) {
+    public Item addOnExistingItem(Item item) throws OverflowQuantityException {
         return items.addOnExistingItem(item);
     }
 

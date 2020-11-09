@@ -20,6 +20,7 @@ import seedu.address.logic.commands.exceptions.UndoRedoLimitReachedException;
 import seedu.address.model.ReadOnlyUserPrefs;
 import seedu.address.model.UserPrefs;
 import seedu.address.model.item.Item;
+import seedu.address.model.item.exceptions.OverflowQuantityException;
 
 /**
  * Represents the in-memory model of the inventory book data.
@@ -118,7 +119,7 @@ public class InventoryModelManager implements InventoryModel {
     }
 
     @Override
-    public Item addOnExistingItem(Item item) {
+    public Item addOnExistingItem(Item item) throws OverflowQuantityException {
         Item combinedItem = inventoryBook.addOnExistingItem(item);
         updateItemListFilter(PREDICATE_SHOW_ALL_ITEMS);
         return combinedItem;

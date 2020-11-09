@@ -25,13 +25,13 @@ public class TypicalDeliveries {
             .withPhone("91234332")
             .withAddress("Clementi Blk 235 #11-111")
             .withOrder("Char Kway Teow")
-            .withTime("28 October 2020 00:00:00")
+            .withTime("28 October 2020 00:00:00 000")
             .build();
     public static final Delivery MARCUS = new DeliveryBuilder().withName("Marcus")
             .withPhone("8198264")
             .withAddress("Jurong Blk 231 #15-123")
             .withOrder("Seafood Hor Fun x5")
-            .withTime("28 October 2020 00:00:00")
+            .withTime("28 October 2020 00:00:00 000")
             .build();
 
     // Manually added - Delivery's details found in {@code CommandTestUtil}
@@ -40,14 +40,14 @@ public class TypicalDeliveries {
             .withPhone(VALID_PHONE_DAMITH)
             .withAddress(VALID_ADDRESS_DAMITH)
             .withOrder(VALID_ORDER_DAMITH)
-            .withTime("28 October 2020 00:00:00")
+            .withTime("28 October 2020 00:00:00 000")
             .build();
     public static final Delivery AARON_MANUAL = new DeliveryBuilder()
             .withName(VALID_NAME_AARON)
             .withPhone(VALID_PHONE_AARON)
             .withAddress(VALID_ADDRESS_AARON)
             .withOrder(VALID_ORDER_AARON)
-            .withTime("28 October 2020 00:00:00")
+            .withTime("28 October 2020 00:00:00 000")
             .build();
 
     private TypicalDeliveries() {} // prevents instantiation

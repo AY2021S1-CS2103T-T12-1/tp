@@ -16,7 +16,7 @@ public class DeliveryBuilder {
     public static final String DEFAULT_PHONE = "91231231";
     public static final String DEFAULT_ADDRESS = "Jln Parang Tritis No. 92 Orchard Road";
     public static final String DEFAULT_ORDER = "Fried Rice 1x, Iced Kopi less sugar x1";
-    public static final String DEFAULT_ENDTIME = "28 October 2020 00:00:00";
+    public static final String DEFAULT_ENDTIME = "28 October 2020 00:00:00 000";
 
     private DeliveryName name;
     private Phone phone;

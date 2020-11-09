@@ -13,6 +13,7 @@ import seedu.address.logic.commands.results.CommandResult;
 import seedu.address.model.Models;
 import seedu.address.model.inventorymodel.InventoryModel;
 import seedu.address.model.item.Item;
+import seedu.address.model.item.exceptions.OverflowQuantityException;
 
 /**
  * Adds a item to the inventory book.
@@ -42,6 +43,8 @@ public class ItemAddCommand extends ItemCommand {
             "You cannot change the max quantity when adding to existing items.";
     public static final String MESSAGE_CHANGE_METRIC_ON_EXISTING_ITEM =
             "You cannot change the metric when adding to existing items.";
+    public static final String MESSAGE_QUANTITY_OVERFLOW = "Quantity must be within 9 digits!\n"
+            + "Adding on to the existing item will exceed quantity's 9 digit limit!";
 
     private final Item toAdd;
 
@@ -71,8 +74,12 @@ public class ItemAddCommand extends ItemCommand {
         }
 
         if (inventoryModel.hasItem(toAdd)) {
-            Item toReplace = inventoryModel.addOnExistingItem(toAdd);
-            commandResult = new CommandResult(String.format(MESSAGE_ITEM_ADDED_TO_INVENTORY, toReplace));
+            try {
+                Item toReplace = inventoryModel.addOnExistingItem(toAdd);
+                commandResult = new CommandResult(String.format(MESSAGE_ITEM_ADDED_TO_INVENTORY, toReplace));
+            } catch (OverflowQuantityException e) {
+                throw new CommandException(MESSAGE_QUANTITY_OVERFLOW);
+            }
         } else {
             inventoryModel.addItem(toAdd);
             commandResult = new CommandResult(String.format(MESSAGE_SUCCESS, toAdd));
